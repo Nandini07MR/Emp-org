@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <tr>
+            <td class="header">ID</td>
+            <td class="header"> Name</td>
+            <td class="header"> Email</td>
+          
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of data">
+            <td>{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.email}}</td>
+        </tr>
+    </tbody>
+</table>
+<button type="submit" (click)="onClick()">next</button>
+<router-outlet></router-outlet>
